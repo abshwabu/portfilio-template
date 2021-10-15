@@ -1,0 +1,44 @@
+@use "../custom" as *;
+@use '../components/mixin' as *;
+@use '../components/animation' as *;
+
+
+.intro-section{
+    @include gradiant;
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+.intro{
+    
+    .video-container{
+        position: relative;
+        
+        a{
+            @include absoluteCenter;
+            span{
+                i{
+                    font-size: 6rem;
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
+.border-animation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0.55rem solid $white;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    animation: puls-border 1.5s linear infinite;
+
+    &--b1{
+        animation-delay: 1s;
+    }
+    &--b2{
+        animation-delay: 1.5s;
+    }
+}

@@ -1,0 +1,61 @@
+@use '../custom'as *;
+@use '../components/mixin'as *;
+
+
+.testimonial{
+    position: relative;
+    padding: 0;
+    @include gradiant;
+
+
+    &__card{
+        background-color: rgba($white,0.8);
+        padding: 2rem 1.25rem;
+        border-radius: 0.68rem;
+        height: auto;
+        text-align: center;
+
+        i{
+            font-size: 1.5rem;
+            color: rgba($primary,0.7);
+        }
+
+        .rating{
+            font-size: 1rem;
+            color: rgba($primary,0.7);
+        }
+    }
+
+    &__pic{
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        border-radius: 50%;
+        background-color: rgba($white,0.8);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin-top: 1rem;
+
+        img{
+            border: 0.325rem solid rgba($primary,0.9);
+        }
+    }
+
+    &__name{
+        padding-top: 3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: $white;
+
+        h3{
+            padding-top: 0.8rem;
+            text-transform: capitalize;
+        }
+
+        p{
+            padding-bottom: 2rem;
+            text-transform: capitalize;
+        }
+    }
+   
+}

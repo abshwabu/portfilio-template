@@ -1,0 +1,70 @@
+@use '../custom' as *;
+
+.display-2{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+
+    &--intro{
+        display: inline-block;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    }
+    &--description{
+        font-size: 1rem;
+        display: block;
+        text-transform: none;
+
+
+        @include media-breakpoint-up(lg){
+            font-size: 1.5rem;
+            display: inline-block;
+        }
+    }
+}
+// heading line
+
+.heading-line::before{
+    content: '';
+    width: 10rem;
+    height: 0.1rem;
+    margin: 0 auto;
+    background-color: $primary;
+    display: block;
+}
+.heading-line::after{
+    content: '';
+    width: 2rem;
+    height: 0.2rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    background-color: $primary;
+    display: block;
+}
+
+.display-3{
+    font-family: 'Poppins', sans-serif;
+
+    &--title{
+        font-weight: 600;
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to right, $primary, $secondary);
+        -webkit-text-fill-color: transparent;
+        
+    }
+}
+
+
+.border-right{
+    border-right: 00.1rem solid $gray-300;
+    height: 100%;
+
+}
+.gradiant{
+    background: linear-gradient(to right,rgba($primary,0.95),rgba($secondary,0.95));
+}

@@ -1,0 +1,34 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+
+.services{
+    position: relative;
+    padding: 1rem 0;
+
+    &__content{
+        padding: 1rem;
+        margin-top: 0rem;
+
+        p{
+            font-size: 0.8rem;
+
+            @include media-breakpoint-up(lg){
+                font-size: 1rem;
+            }
+        }
+
+        @include media-breakpoint-up(lg){
+            margin-top: 5rem;
+        }
+
+
+        .icon{
+            font-size: 2.5rem;
+            color: $primary;
+
+        }
+    }
+    &__pic{
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,24 @@
+@use "../custom" as *;
+@use '../components/mixin' as *;
+
+.menu{
+
+    @include gradiant;
+    li{
+        padding: 0 0.75rem;
+    }
+    a{
+       
+        img {
+           
+            background-color: $white;
+            width: 2.5rem;
+            height: 2.5rem;
+            
+            border-radius: 50%;
+        }
+        color: $white !important;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+}
